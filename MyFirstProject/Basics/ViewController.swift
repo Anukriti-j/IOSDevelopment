@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var greetingMsg: UILabel?
     @IBOutlet weak var primaryButton: UIButton?
     
-    @IBOutlet weak var InputName: UITextField?
+    @IBOutlet weak var inputName: UITextField?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     }
     private func setupUI(){
         greetingMsg?.textAlignment = .center
-        InputName?.placeholder = "Enter Your name"
+        inputName?.placeholder = "Enter Your name"
         primaryButton?.setTitle("Show Greeting", for: .normal)
         //uicontrol state means the current status or appearance of control: .normal, .selected, .highlighted, .disabled
     }
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func primaryButtonTrigger(_ sender: Any) {
-        if let name = InputName?.text, !name.isEmpty{
+        if let name = inputName?.text, !name.isEmpty{
             greetingLabel(name)
             view.backgroundColor = .white
         }else{
