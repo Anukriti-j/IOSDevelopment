@@ -10,26 +10,39 @@ import UIKit
 class ViewController: UIViewController {
 
     
-    @IBOutlet weak var greetingMsg: UILabel!
-    @IBOutlet weak var primaryButton: UIButton!
+    @IBOutlet weak var greetingMsg: UILabel?
+    @IBOutlet weak var primaryButton: UIButton?
+    
+    @IBOutlet weak var InputName: UITextField?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
         // Do any additional setup after loading the view.
-//        view.backgroundColor = .systemBlue
-        greetingMsg.textAlignment = .center
        
+    }
+    private func setupUI(){
+        greetingMsg?.textAlignment = .center
+        InputName?.placeholder = "Enter Your name"
+        primaryButton?.setTitle("Show Greeting", for: .normal)
+        //uicontrol state means the current status or appearance of control: .normal, .selected, .highlighted, .disabled
     }
 
     func greetingLabel(_ name: String){
-        greetingMsg.text = "Hello \(name)"
+        greetingMsg?.text = "Hello \(name)!"
     }
     
     
     @IBAction func primaryButtonTrigger(_ sender: Any) {
-        greetingLabel("Anukriti")
-        view.backgroundColor = .white
+        if let name = InputName?.text, !name.isEmpty{
+            greetingLabel(name)
+            view.backgroundColor = .white
+        }else{
+            greetingMsg?.text = "please enter your name"
+        }
+        
     }
+    
     
 
 }

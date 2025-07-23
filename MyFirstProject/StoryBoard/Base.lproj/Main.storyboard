@@ -16,33 +16,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is my FirstProject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3A-WN-SHl">
-                                <rect key="frame" x="112.66666666666669" y="415.66666666666669" width="168" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jpl-uC-UP7">
-                                <rect key="frame" x="159" y="553" width="75" height="34"/>
+                                <rect key="frame" x="159" y="569" width="75" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Button"/>
                                 <connections>
                                     <action selector="primaryButtonTrigger:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kHI-qO-9V7"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eze-sE-qHj">
+                                <rect key="frame" x="180.66666666666666" y="409" width="32" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbd-Ry-9G6">
+                                <rect key="frame" x="176" y="335" width="42" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
-                            <constraint firstItem="Y3A-WN-SHl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AUQ-Mh-1SU"/>
-                            <constraint firstItem="Y3A-WN-SHl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aeh-Jn-TAx"/>
+                            <constraint firstItem="Eze-sE-qHj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4RL-GR-Y4u"/>
+                            <constraint firstItem="Jpl-uC-UP7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="451" id="9nz-DN-Cjz"/>
+                            <constraint firstItem="Eze-sE-qHj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KU4-n8-4dF"/>
+                            <constraint firstItem="Eze-sE-qHj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NUW-Pj-qr3"/>
+                            <constraint firstItem="kbd-Ry-9G6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R3x-Qo-Mur"/>
                             <constraint firstItem="Jpl-uC-UP7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eMA-Qj-ieB"/>
-                            <constraint firstItem="Jpl-uC-UP7" firstAttribute="top" secondItem="Y3A-WN-SHl" secondAttribute="bottom" constant="116.33333333333331" id="ln0-uV-ZVb"/>
                             <constraint firstItem="Jpl-uC-UP7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vLQ-gZ-mNP"/>
+                            <constraint firstItem="Eze-sE-qHj" firstAttribute="top" secondItem="kbd-Ry-9G6" secondAttribute="bottom" constant="43" id="yqs-GV-Jpz"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="GreetingMsg" destination="Y3A-WN-SHl" id="dzm-tr-oMJ"/>
+                        <outlet property="InputName" destination="Eze-sE-qHj" id="kS1-Vs-0L5"/>
+                        <outlet property="greetingMsg" destination="kbd-Ry-9G6" id="cW3-9Y-Z89"/>
                         <outlet property="primaryButton" destination="Jpl-uC-UP7" id="rDV-ga-a5M"/>
                     </connections>
                 </viewController>
