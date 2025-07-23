@@ -1,3 +1,5 @@
+// TODO 17: Create custom errors and functions that can throw
+
 enum NetworkError: Error{
     case internetIssue
     case invalidUrl
