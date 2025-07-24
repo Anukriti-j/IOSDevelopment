@@ -16,7 +16,7 @@ class ViewController: UIViewController {
             appBundleLabel.text = "Bundle ID: Error"
             return
         }
-        let appName = (infoDict["CFBundleDisplayName"] as? String) ?? "N/A"
+        let appName = (infoDict["CFBundleDisplayName"] as? String) ?? (infoDict["CFBundleName"] as? String) ?? "N/A"
         let appVersion = (infoDict["CFBundleShortVersionString"] as? String) ?? "N/A"
         let appBundleID = bundle.bundleIdentifier ?? "N/A"
         appNameLabel.text = "App Name: \(appName)"
