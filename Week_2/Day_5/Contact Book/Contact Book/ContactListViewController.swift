@@ -11,14 +11,16 @@ class ContactListViewController: UIViewController {
         nameListTableView.delegate = self
         nameListTableView.dataSource = self
     }
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//            if segue.identifier == "showDetailSegue",
-//               let destination = segue.destination as? ContactDetailViewController,
-//               let indexPath = nameListTableView.indexPathForSelectedRow {
-//                let selectedContact = contactList[indexPath.row]
-//                destination.contact = selectedContact
-//            }
-//    }
+    
+    //    TODO: Pass data without using segue
+    //   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    //            if segue.identifier == "showDetailSegue",
+    //               let destination = segue.destination as? ContactDetailViewController,
+    //               let indexPath = nameListTableView.indexPathForSelectedRow {
+    //                let selectedContact = contactList[indexPath.row]
+    //                destination.contact = selectedContact
+    //            }
+    //    }
 }
 
 extension ContactListViewController: UITableViewDataSource, UITableViewDelegate {
@@ -34,12 +36,15 @@ extension ContactListViewController: UITableViewDataSource, UITableViewDelegate 
         return cell
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        performSegue(withIdentifier: "showDetailSegue", sender: self)
-//    }
+    //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    //        performSegue(withIdentifier: "showDetailSegue", sender: self)
+    //    }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedContact = contactList[indexPath.row]
+        
+        // Mark: Using manual instantiation to navigate
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let detailVC = storyboard.instantiateViewController(withIdentifier: "ContactDetailViewController") as? ContactDetailViewController {
             detailVC.contact = selectedContact

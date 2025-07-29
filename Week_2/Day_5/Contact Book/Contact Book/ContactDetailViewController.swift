@@ -19,7 +19,7 @@ class ContactDetailViewController: UIViewController {
         setImageView()
     }
     
-    func setContactDetails(){
+    func setContactDetails() {
         guard let contact = contact else {
             nameLabel.text = Strings.unknownName
             phoneLabel.text = Strings.noContactNumber
@@ -34,10 +34,10 @@ class ContactDetailViewController: UIViewController {
         personImageView.image = UIImage(named: contact.imageName)
     }
     
-    func setImageView(){
+    func setImageView() {
         personImageView.layer.cornerRadius = personImageView.frame.width / 2
         personImageView.layer.borderWidth = 2
         personImageView.layer.borderColor = UIColor.black.cgColor
-
+        
     }
 }
