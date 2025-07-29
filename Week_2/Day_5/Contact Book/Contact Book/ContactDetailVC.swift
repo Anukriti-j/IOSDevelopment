@@ -21,18 +21,16 @@ class ContactDetailVC: UIViewController {
     }
     
     func setContactDetails() {
-        guard let contact = contact else {
-            nameLabel.text = Strings.unknownName
-            phoneLabel.text = Strings.noContactNumber
-            mailLabel.text = Strings.noEMail
+        nameLabel.text = contact?.name ?? "No name found"
+        phoneLabel.text = contact?.phoneNumber ?? "No number found"
+        mailLabel.text = contact?.email ?? "No email found"
+        if  let personImage = contact?.imageName, let image = UIImage(named: personImage) {
+            personImageView.image = image
+        }
+        else {
             personImageView.image = UIImage(systemName: "person.crop.circle.fill") // Use a system placeholder
             personImageView.tintColor = .systemGray
-            return
         }
-        nameLabel.text = contact.name
-        phoneLabel.text = contact.phoneNumber
-        mailLabel.text = contact.email
-        personImageView.image = UIImage(named: contact.imageName)
     }
     
     func setImageView() {

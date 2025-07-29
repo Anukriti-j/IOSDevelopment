@@ -31,6 +31,7 @@ class ContactListVC: UIViewController {
     //    }
 }
 
+// MARK: Using manual instantiation to navigate
 extension ContactListVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -50,9 +51,6 @@ extension ContactListVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedContact = contactList[indexPath.row]
-        
-        // Mark: Using manual instantiation to navigate
-        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let detailVC = storyboard.instantiateViewController(withIdentifier: "ContactDetailViewController") as? ContactDetailVC {
             detailVC.contact = selectedContact

@@ -1,6 +1,6 @@
 struct Contact{
-    let name: String
-    let phoneNumber: String
-    let email: String
-    let imageName: String
+    let name: String?
+    let phoneNumber: String?
+    let email: String?
+    let imageName: String?
 }
