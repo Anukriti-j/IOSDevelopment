@@ -2,17 +2,16 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ktf-Qo-7Ik">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Contact List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Contact_Book" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ContactListViewController" customModule="Contact_Book" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,7 +43,6 @@
                     <navigationItem key="navigationItem" id="4Xs-KS-tnL"/>
                     <connections>
                         <outlet property="nameListTableView" destination="1RA-t3-FxK" id="0DC-B3-QiO"/>
-                        <segue destination="2fC-kS-k2u" kind="show" identifier="showDetailSegue" id="FT2-eV-Czn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -54,13 +52,13 @@
         <!--Contact Detail View Controller-->
         <scene sceneID="TWg-wG-nVs">
             <objects>
-                <viewController id="2fC-kS-k2u" customClass="ContactDetailViewController" customModule="Contact_Book" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContactDetailViewController" id="2fC-kS-k2u" customClass="ContactDetailViewController" customModule="Contact_Book" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ptn-Ql-4an">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Ymj-TZ-hu2">
-                                <rect key="frame" x="20" y="212" width="374.33333333333331" height="267"/>
+                                <rect key="frame" x="20" y="168" width="374.33333333333331" height="267"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ogy-aV-paV">
                                         <rect key="frame" x="117.33333333333334" y="0.0" width="140.00000000000003" height="140"/>
@@ -121,37 +119,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J7k-Ve-XeK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2045.0381679389311" y="19.718309859154932"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="K1W-Qe-ifh">
-            <objects>
-                <viewController id="Hu7-HS-2YN" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="kF3-IO-d4m">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rbf-Ve-ao5">
-                                <rect key="frame" x="96" y="326" width="200" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Rbf-Ve-ao5" secondAttribute="height" multiplier="1:1" id="A50-hl-CQw"/>
-                                    <constraint firstAttribute="width" secondItem="Rbf-Ve-ao5" secondAttribute="height" multiplier="1:1" id="ZFz-eO-A3B"/>
-                                    <constraint firstAttribute="height" constant="200" id="t5M-rL-e59"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="GF3-g1-eKZ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Rbf-Ve-ao5" firstAttribute="centerY" secondItem="kF3-IO-d4m" secondAttribute="centerY" id="FOD-wL-tVk"/>
-                            <constraint firstItem="Rbf-Ve-ao5" firstAttribute="height" secondItem="kF3-IO-d4m" secondAttribute="height" multiplier="0.5" id="IDg-TT-Bqm"/>
-                            <constraint firstItem="Rbf-Ve-ao5" firstAttribute="width" secondItem="kF3-IO-d4m" secondAttribute="width" multiplier="0.5" id="OLH-sa-uuz"/>
-                            <constraint firstItem="Rbf-Ve-ao5" firstAttribute="centerX" secondItem="kF3-IO-d4m" secondAttribute="centerX" id="xTL-hZ-y0n"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZM1-cU-LC4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3019" y="31"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Icw-iH-xWr">
