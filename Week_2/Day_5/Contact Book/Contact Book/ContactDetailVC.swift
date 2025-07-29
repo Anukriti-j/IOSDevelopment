@@ -1,6 +1,6 @@
 import UIKit
 
-class ContactDetailViewController: UIViewController {
+class ContactDetailVC: UIViewController {
     
     var contact: Contact?
     
@@ -12,6 +12,7 @@ class ContactDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setContactDetails()
+        self.title = contact?.name
     }
     
     override func viewDidLayoutSubviews() {

@@ -1,6 +1,6 @@
 import UIKit
 
-class ContactListViewController: UIViewController {
+class ContactListVC: UIViewController {
     
     @IBOutlet weak var nameListTableView: UITableView!
     
@@ -10,6 +10,14 @@ class ContactListViewController: UIViewController {
         super.viewDidLoad()
         nameListTableView.delegate = self
         nameListTableView.dataSource = self
+        setVCTitle()
+    }
+    
+    func setVCTitle() {
+        self.title = "Contacts"
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.systemBlue]
     }
     
     //    TODO: Pass data without using segue
@@ -23,7 +31,7 @@ class ContactListViewController: UIViewController {
     //    }
 }
 
-extension ContactListViewController: UITableViewDataSource, UITableViewDelegate {
+extension ContactListVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return contactList.count
@@ -46,7 +54,7 @@ extension ContactListViewController: UITableViewDataSource, UITableViewDelegate 
         // Mark: Using manual instantiation to navigate
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        if let detailVC = storyboard.instantiateViewController(withIdentifier: "ContactDetailViewController") as? ContactDetailViewController {
+        if let detailVC = storyboard.instantiateViewController(withIdentifier: "ContactDetailViewController") as? ContactDetailVC {
             detailVC.contact = selectedContact
             navigationController?.pushViewController(detailVC, animated: true)
         }
