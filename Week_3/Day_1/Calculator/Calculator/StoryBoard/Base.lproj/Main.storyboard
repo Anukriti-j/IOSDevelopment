@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="288"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeR-6y-Uee">
-                                        <rect key="frame" x="30" y="200" width="343" height="40.666666666666657"/>
+                                        <rect key="frame" x="30" y="100.00000000000001" width="343" height="178.33333333333337"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -30,7 +30,7 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="VeR-6y-Uee" secondAttribute="trailing" constant="20" id="D57-27-P40"/>
                                     <constraint firstItem="VeR-6y-Uee" firstAttribute="leading" secondItem="eIn-nq-2Kn" secondAttribute="leading" constant="30" id="eN7-sY-q26"/>
-                                    <constraint firstItem="VeR-6y-Uee" firstAttribute="top" secondItem="eIn-nq-2Kn" secondAttribute="top" constant="200" id="pr1-FY-bJW"/>
+                                    <constraint firstItem="VeR-6y-Uee" firstAttribute="top" secondItem="eIn-nq-2Kn" secondAttribute="top" constant="100" id="pr1-FY-bJW"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jh2-Qa-3wo">
@@ -330,6 +330,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="eIn-nq-2Kn" secondAttribute="trailing" id="C6l-IW-jNQ"/>
                             <constraint firstItem="eIn-nq-2Kn" firstAttribute="centerX" secondItem="jh2-Qa-3wo" secondAttribute="centerX" id="HU0-uD-p41"/>
+                            <constraint firstItem="jh2-Qa-3wo" firstAttribute="top" secondItem="VeR-6y-Uee" secondAttribute="bottom" constant="30" id="Lc8-aD-4hN"/>
                             <constraint firstItem="jh2-Qa-3wo" firstAttribute="top" secondItem="eIn-nq-2Kn" secondAttribute="bottom" constant="20.333333333333314" id="XRa-4u-K5B"/>
                             <constraint firstAttribute="bottom" secondItem="eIn-nq-2Kn" secondAttribute="bottom" constant="564" id="avG-bo-EfD"/>
                             <constraint firstItem="eIn-nq-2Kn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="et8-LV-hXV"/>
