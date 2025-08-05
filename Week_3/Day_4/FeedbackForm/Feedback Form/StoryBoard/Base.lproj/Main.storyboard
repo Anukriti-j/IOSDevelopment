@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="8K5-Rx-b5k">
-                                <rect key="frame" x="30" y="277" width="333" height="216"/>
+                                <rect key="frame" x="30" y="277.33333333333331" width="333" height="216"/>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's in your mind?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYT-OB-W21">
                                 <rect key="frame" x="30" y="202" width="333" height="25.333333333333343"/>
@@ -109,7 +109,7 @@
                                                                 <color key="maximumTrackTintColor" systemColor="systemFillColor"/>
                                                                 <color key="thumbTintColor" name="AccentColor"/>
                                                                 <connections>
-                                                                    <action selector="rateExperienceSlider:" destination="k9e-uD-fCk" eventType="valueChanged" id="Yzd-tM-6Fv"/>
+                                                                    <action selector="controlChanged:" destination="k9e-uD-fCk" eventType="valueChanged" id="HHh-vh-qha"/>
                                                                 </connections>
                                                             </slider>
                                                         </subviews>
@@ -132,7 +132,7 @@
                                                                 <rect key="frame" x="288" y="0.0" width="51" height="34"/>
                                                                 <color key="onTintColor" systemColor="tintColor"/>
                                                                 <connections>
-                                                                    <action selector="recommendSwitchToggled:" destination="k9e-uD-fCk" eventType="valueChanged" id="f6N-5v-rVm"/>
+                                                                    <action selector="controlChanged:" destination="k9e-uD-fCk" eventType="valueChanged" id="JJT-Yf-wTN"/>
                                                                 </connections>
                                                             </switch>
                                                         </subviews>
@@ -154,7 +154,7 @@
                                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" value="1" minimumValue="1" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="YHw-wX-Fll">
                                                                 <rect key="frame" x="243" y="0.0" width="94" height="34"/>
                                                                 <connections>
-                                                                    <action selector="updateVisitCount:" destination="k9e-uD-fCk" eventType="valueChanged" id="PSl-Zg-YSV"/>
+                                                                    <action selector="controlChanged:" destination="k9e-uD-fCk" eventType="valueChanged" id="hEk-Wr-5GP"/>
                                                                 </connections>
                                                             </stepper>
                                                         </subviews>
@@ -181,7 +181,7 @@
                                                                 </segments>
                                                                 <color key="selectedSegmentTintColor" name="AccentColor"/>
                                                                 <connections>
-                                                                    <action selector="selectGenderControl:" destination="k9e-uD-fCk" eventType="valueChanged" id="Iu3-Mg-e5I"/>
+                                                                    <action selector="controlChanged:" destination="k9e-uD-fCk" eventType="valueChanged" id="7AN-d8-3FU"/>
                                                                 </connections>
                                                             </segmentedControl>
                                                         </subviews>
@@ -275,7 +275,6 @@
         <!--View Controller-->
         <scene sceneID="hgg-Jo-nGi">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1XJ-g3-H2h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="siY-wv-hcS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dCZ-V4-0ue">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -284,6 +283,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1XJ-g3-H2h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-311" y="-673"/>
         </scene>
@@ -314,13 +314,13 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemFillColor">
-            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

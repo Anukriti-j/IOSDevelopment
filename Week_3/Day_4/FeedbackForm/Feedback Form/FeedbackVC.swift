@@ -29,30 +29,23 @@ class FeedbackVC: UIViewController {
         mailText.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
     }
     
-    @IBAction func rateExperienceSlider(_ sender: UISlider) {
-        experienceText.text = String(Int(sender.value))
-        experienceSet = true
-        updateProgress()
-    }
-    
-    @IBAction func recommendSwitchToggled(_ sender: UISwitch) {
-        recommendText.text = sender.isOn ? "Yes" : "No"
-        updateProgress()
-    }
-    
-    @IBAction func updateVisitCount(_ sender: UIStepper) {
-        visitCountText.text = String(Int(sender.value))
-        countSet = true
-        updateProgress()
-    }
-    
-    @IBAction func selectGenderControl(_ sender: UISegmentedControl) {
-        selectedGender = sender.selectedSegmentIndex
-        updateProgress()
-    }
-    
     @IBAction func resetButtonTapped(_ sender: Any) {
         setInitialState()
+    }
+    
+    @IBAction func controlChanged(_ sender: UIControl) {
+        if let slider = sender as? UISlider {
+            experienceText.text = String(Int(slider.value))
+            experienceSet = true
+        } else if let recommendUISwitch = sender as? UISwitch {
+            recommendText.text = recommendUISwitch.isOn ? "Yes" : "No"
+        } else if let stepper = sender as? UIStepper {
+            visitCountText.text = String(Int(stepper.value))
+            countSet = true
+        } else if let segmentControl = sender as? UISegmentedControl {
+            selectedGender = segmentControl.selectedSegmentIndex
+        }
+        updateProgress()
     }
     
     @IBAction func submitButtonTapped(_ sender: UIButton) {
