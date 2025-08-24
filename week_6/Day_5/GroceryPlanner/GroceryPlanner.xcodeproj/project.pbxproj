@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		7E5EA0292E5497FD00D3C4F6 /* TaskManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E5EA0B92E56F3FC00D3C4F6 /* GroceryPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		7E5EA02B2E5497FD00D3C4F6 /* TaskManager */ = {
+		7E5EA0BB2E56F3FC00D3C4F6 /* GroceryPlanner */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TaskManager;
+			path = GroceryPlanner;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7E5EA0262E5497FD00D3C4F6 /* Frameworks */ = {
+		7E5EA0B62E56F3FC00D3C4F6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,18 +29,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7E5EA0202E5497FD00D3C4F6 = {
+		7E5EA0B02E56F3FC00D3C4F6 = {
 			isa = PBXGroup;
 			children = (
-				7E5EA02B2E5497FD00D3C4F6 /* TaskManager */,
-				7E5EA02A2E5497FD00D3C4F6 /* Products */,
+				7E5EA0BB2E56F3FC00D3C4F6 /* GroceryPlanner */,
+				7E5EA0BA2E56F3FC00D3C4F6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7E5EA02A2E5497FD00D3C4F6 /* Products */ = {
+		7E5EA0BA2E56F3FC00D3C4F6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7E5EA0292E5497FD00D3C4F6 /* TaskManager.app */,
+				7E5EA0B92E56F3FC00D3C4F6 /* GroceryPlanner.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,66 +48,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7E5EA0282E5497FD00D3C4F6 /* TaskManager */ = {
+		7E5EA0B82E56F3FC00D3C4F6 /* GroceryPlanner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7E5EA0342E54980000D3C4F6 /* Build configuration list for PBXNativeTarget "TaskManager" */;
+			buildConfigurationList = 7E5EA0C42E56F40000D3C4F6 /* Build configuration list for PBXNativeTarget "GroceryPlanner" */;
 			buildPhases = (
-				7E5EA0252E5497FD00D3C4F6 /* Sources */,
-				7E5EA0262E5497FD00D3C4F6 /* Frameworks */,
-				7E5EA0272E5497FD00D3C4F6 /* Resources */,
+				7E5EA0B52E56F3FC00D3C4F6 /* Sources */,
+				7E5EA0B62E56F3FC00D3C4F6 /* Frameworks */,
+				7E5EA0B72E56F3FC00D3C4F6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				7E5EA02B2E5497FD00D3C4F6 /* TaskManager */,
+				7E5EA0BB2E56F3FC00D3C4F6 /* GroceryPlanner */,
 			);
-			name = TaskManager;
+			name = GroceryPlanner;
 			packageProductDependencies = (
 			);
-			productName = TaskManager;
-			productReference = 7E5EA0292E5497FD00D3C4F6 /* TaskManager.app */;
+			productName = GroceryPlanner;
+			productReference = 7E5EA0B92E56F3FC00D3C4F6 /* GroceryPlanner.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7E5EA0212E5497FD00D3C4F6 /* Project object */ = {
+		7E5EA0B12E56F3FC00D3C4F6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
-					7E5EA0282E5497FD00D3C4F6 = {
+					7E5EA0B82E56F3FC00D3C4F6 = {
 						CreatedOnToolsVersion = 16.4;
 					};
 				};
 			};
-			buildConfigurationList = 7E5EA0242E5497FD00D3C4F6 /* Build configuration list for PBXProject "TaskManager" */;
+			buildConfigurationList = 7E5EA0B42E56F3FC00D3C4F6 /* Build configuration list for PBXProject "GroceryPlanner" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 7E5EA0202E5497FD00D3C4F6;
+			mainGroup = 7E5EA0B02E56F3FC00D3C4F6;
 			minimizedProjectReferenceProxies = 1;
-			packageReferences = (
-			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 7E5EA02A2E5497FD00D3C4F6 /* Products */;
+			productRefGroup = 7E5EA0BA2E56F3FC00D3C4F6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7E5EA0282E5497FD00D3C4F6 /* TaskManager */,
+				7E5EA0B82E56F3FC00D3C4F6 /* GroceryPlanner */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7E5EA0272E5497FD00D3C4F6 /* Resources */ = {
+		7E5EA0B72E56F3FC00D3C4F6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -117,7 +115,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7E5EA0252E5497FD00D3C4F6 /* Sources */ = {
+		7E5EA0B52E56F3FC00D3C4F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -127,7 +125,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		7E5EA0322E54980000D3C4F6 /* Debug */ = {
+		7E5EA0C22E56F40000D3C4F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -190,7 +188,7 @@
 			};
 			name = Debug;
 		};
-		7E5EA0332E54980000D3C4F6 /* Release */ = {
+		7E5EA0C32E56F40000D3C4F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -246,7 +244,7 @@
 			};
 			name = Release;
 		};
-		7E5EA0352E54980000D3C4F6 /* Debug */ = {
+		7E5EA0C52E56F40000D3C4F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -265,7 +263,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Coditas.TaskManager;
+				PRODUCT_BUNDLE_IDENTIFIER = Coditas.GroceryPlanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -273,7 +271,7 @@
 			};
 			name = Debug;
 		};
-		7E5EA0362E54980000D3C4F6 /* Release */ = {
+		7E5EA0C62E56F40000D3C4F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -292,7 +290,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Coditas.TaskManager;
+				PRODUCT_BUNDLE_IDENTIFIER = Coditas.GroceryPlanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -303,25 +301,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7E5EA0242E5497FD00D3C4F6 /* Build configuration list for PBXProject "TaskManager" */ = {
+		7E5EA0B42E56F3FC00D3C4F6 /* Build configuration list for PBXProject "GroceryPlanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7E5EA0322E54980000D3C4F6 /* Debug */,
-				7E5EA0332E54980000D3C4F6 /* Release */,
+				7E5EA0C22E56F40000D3C4F6 /* Debug */,
+				7E5EA0C32E56F40000D3C4F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7E5EA0342E54980000D3C4F6 /* Build configuration list for PBXNativeTarget "TaskManager" */ = {
+		7E5EA0C42E56F40000D3C4F6 /* Build configuration list for PBXNativeTarget "GroceryPlanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7E5EA0352E54980000D3C4F6 /* Debug */,
-				7E5EA0362E54980000D3C4F6 /* Release */,
+				7E5EA0C52E56F40000D3C4F6 /* Debug */,
+				7E5EA0C62E56F40000D3C4F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7E5EA0212E5497FD00D3C4F6 /* Project object */;
+	rootObject = 7E5EA0B12E56F3FC00D3C4F6 /* Project object */;
 }
