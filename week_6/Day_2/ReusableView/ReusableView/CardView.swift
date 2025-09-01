@@ -7,23 +7,21 @@ struct CardView: View {
     
     var body: some View {
         VStack {
-            VStack {
-                Text("\(title)")
-                    .font(.headline)
-                    .fontWeight(.bold)
-                    .padding([.top, .leading, .trailing])
-                Image("\(image)")
-                    .resizable()
-                    .frame(height: 200, alignment: .center)
-                    .aspectRatio(contentMode: .fit)
-            }
-            .background(Color.white)
-            .cornerRadius(10)
-            .shadow(radius: 5)
+            Text("\(title)")
+                .font(.headline)
+                .fontWeight(.bold)
+                .padding([.top, .leading, .trailing])
+            Image("\(image)")
+                .resizable()
+                .frame(height: 200, alignment: .center)
+                .aspectRatio(contentMode: .fit)
         }
+        .background(Color.white)
+        .cornerRadius(10)
+        .shadow(radius: 5)
     }
 }
-
+//
 //#Preview {
 //    CardView()
 //}

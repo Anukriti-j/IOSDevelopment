@@ -6,7 +6,8 @@ struct GroceryListView: View {
     var body: some View {
         List {
             ForEach(groceryViewModel.groceryModelList) { category in
-                Section(header: Text(category.category).textCase(.uppercase).foregroundColor(Color.black)) {
+                Section(header: Text(category.category).textCase(.uppercase).foregroundColor(Color.black))
+                {
                     ForEach(category.categoryItem) { item in
                         NavigationLink(destination: GroceryDetailView(item: item)) {
                             ListRowView(item: item.itemName)

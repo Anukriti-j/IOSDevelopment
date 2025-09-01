@@ -20,7 +20,6 @@ struct SheetView: View {
                         .foregroundColor(Color.red)
                 }
                 .buttonStyle(PlainButtonStyle())
-                .padding(.top, 10)
                 .padding(.trailing, 20)
                 
                 Spacer()
