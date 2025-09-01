@@ -24,16 +24,22 @@ class TaskViewModel: ObservableObject {
         }
     }
     
-    func addData(title: String, detail: String) {
-        guard !title.isEmpty else {
+    func addData(newtitle: String, detail: String) {
+        guard !newtitle.isEmpty else {
             showAlert = true
             return alertMsg = "Cannot Leave title empty"
         }
+        for index in taskList.indices {
+            if (taskList[index].title?.lowercased() == newtitle.lowercased()) {
+                showAlert = true
+                alertMsg = "Task exists"
+                return
+            }
+        }
         let task = TaskEntity(context: viewContext)
         task.id = UUID()
-        task.title = title
+        task.title = newtitle
         task.taskDetail = detail
-        save()
         self.fetchData()
         showAlert = true
         alertMsg = "Success"

@@ -4,6 +4,7 @@ struct AddTaskSheetView: View {
     @ObservedObject var taskViewModel: TaskViewModel
     @State var newtitle: String = ""
     @State var taskDetail: String = ""
+    @Environment(\.dismiss) private var dismiss
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
@@ -33,9 +34,10 @@ struct AddTaskSheetView: View {
             .padding(.horizontal)
             
             Button {
-                taskViewModel.addData(title: newtitle, detail: taskDetail)
+                taskViewModel.addData(newtitle: newtitle, detail: taskDetail)
                 newtitle = ""
                 taskDetail = ""
+                dismiss()
             } label: {
                 Text("Save")
                     .frame(maxWidth: .infinity)
