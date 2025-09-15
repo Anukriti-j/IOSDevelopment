@@ -7,18 +7,6 @@ class ViewModel: ObservableObject {
     var isValid: Bool = true
     init() {
         loadData()
-        //        createNewDirectory()
-        //        deleteFile()
-        //        fileExist()
-        //        copyFile()
-        //        saveText(text: "Hello ANukriti writing file", to: "ios.txt")
-        //        if let loadedText = loadText(from: "ios.txt") {
-        //            print("loaded text: \(loadedText)")
-        //        }
-        saveJSON(Person(name: "Tushar", age: 21), to: "Person.json")
-        if let person = loadJson(from: "Person.json") {
-            print("name: \(person.name), age: \(person.age)")
-        }
     }
     
     func loadData() {
