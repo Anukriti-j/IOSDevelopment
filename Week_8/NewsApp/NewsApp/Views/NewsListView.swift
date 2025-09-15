@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct HeadlinesView: View {
+struct NewsListView: View {
     @StateObject private var newsViewModel = NewsViewModel()
     
     var body: some View {
@@ -22,14 +22,14 @@ struct HeadlinesView: View {
                     }
                     .listStyle(.inset)
                     .refreshable {
-                        await newsViewModel.getHeadlines()
+                        await newsViewModel.fetchArticlesFromAPI()
                     }
                 }
             }
             .navigationTitle("Top Headlines")
-            .task {
-                await newsViewModel.getHeadlines(isInitialLoad: true)
-            }
+//            .task {
+//                await newsViewModel.fetchArticlesFromAPI(isInitialLoad: true)
+//            }
         }
     }
 }

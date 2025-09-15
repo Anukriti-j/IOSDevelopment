@@ -2,19 +2,19 @@ import UIKit
 
 class GroceryViewModel: ObservableObject {
     
-    @Published var groceryModelList: [GroceryCategoryModel] = [
-        GroceryCategoryModel(category: "Fruits",
-                             categoryItem: [GroceryItemModel(itemName: "Banana")])]
+    @Published var groceryModelList: [GroceryCategoryModel] = []
     
     func addButtonTapped(newCategory: String, newGrocery: String) {
         let newItem = newGrocery.trimmingCharacters(in: .whitespacesAndNewlines)
         
         if !newCategory.isEmpty && !newItem.isEmpty {
             if let index = groceryModelList.firstIndex(where: { $0.category.capitalized == newCategory.capitalized }) {
-                groceryModelList[index].categoryItem.append(GroceryItemModel(itemName: newItem))
+                    groceryModelList[index].categoryItem.append(GroceryItemModel(itemName: newItem))
+                appendToFile(model: groceryModelList, to: "Grocery.json")
             } else {
                 let item = GroceryCategoryModel(category: newCategory, categoryItem: [GroceryItemModel(itemName: newItem)])
                 groceryModelList.append(item)
+                appendToFile(model: groceryModelList, to: "Grocery.json")
             }
         }
     }

@@ -2,10 +2,11 @@ import SwiftUI
 
 struct GroceryListView: View {
     @EnvironmentObject var groceryViewModel: GroceryViewModel
+    private var groceryList = loadJSON(from: "Grocery.json")
     
     var body: some View {
         List {
-            ForEach(groceryViewModel.groceryModelList) { category in
+            ForEach(groceryList ?? []) { category in
                 Section(header: Text(category.category).textCase(.uppercase).foregroundColor(Color.black))
                 {
                     ForEach(category.categoryItem) { item in
