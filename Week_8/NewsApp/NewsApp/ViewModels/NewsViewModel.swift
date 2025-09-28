@@ -38,7 +38,7 @@ class NewsViewModel: ObservableObject {
     }
     
     func saveArticles( _ articles: [Article]) {
-        let encodedData = UserDefaults.standard.setObjects(articles.self, forKey: "Article")
+        let encodedData: () = UserDefaults.standard.setObjects(articles.self, forKey: "Article")
     }
     
     func getCachedArticles() -> [Article]? {

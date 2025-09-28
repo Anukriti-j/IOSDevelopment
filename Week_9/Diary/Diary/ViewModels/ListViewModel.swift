@@ -7,7 +7,7 @@ class ListViewModel: ObservableObject {
     @Published var searchText: String = ""
     
     init() {
-        fetchData()
+        _ = fetchData()
     }
     
     func fetchData() -> Alerts {
@@ -29,7 +29,7 @@ class ListViewModel: ObservableObject {
         }
         do {
             try context.save()
-            fetchData()
+            _ = fetchData()
             return .success
         } catch {
             print("\(error.localizedDescription)")

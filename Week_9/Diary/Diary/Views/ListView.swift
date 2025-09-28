@@ -22,6 +22,22 @@ struct ListView: View {
                         alertMessage = result.alertMessage
                         showAlert = true
                     }
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                 }
             }
             .navigationTitle("My Notes")
@@ -58,7 +74,8 @@ struct ListView: View {
                 Button("OK", role: .cancel) {}
             } message: {
                 Text("\(alertMessage)")
-            }     
+            }
+            
         }
     }
 }

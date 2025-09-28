@@ -8,7 +8,7 @@ class PersistenceController {
     }
     
     let container: NSPersistentContainer
-    init() {
+    private init() {
         self.container = NSPersistentContainer(name: "Note")
         container.loadPersistentStores { description, error in
             if let error = error {

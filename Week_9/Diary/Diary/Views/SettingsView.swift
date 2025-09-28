@@ -12,9 +12,9 @@ struct SettingsView: View {
                             Text(theme.rawValue).tag(theme)
                         }
                     }
-                    .onChange(of: settingsViewModel.selectedTheme) {
-                        settingsViewModel.saveSelectedTheme()
-                    }
+//                    .onChange(of: settingsViewModel.selectedTheme) {
+//                        settingsViewModel.saveSelectedTheme()
+//                    }
                 }
                 Section {
                     Button("Reset Settings") {
