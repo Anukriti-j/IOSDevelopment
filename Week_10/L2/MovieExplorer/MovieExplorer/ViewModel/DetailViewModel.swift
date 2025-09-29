@@ -29,7 +29,7 @@ class DetailViewModel: ObservableObject {
                 if existingMovie.detailFetched {
                     print("Loaded from Core Data")
                     self.movieItem = MovieAPIitem(from: existingMovie)
-                    return
+                    return  
                 }
                 
                 if let fetchedDetail: MovieAPIitem = try await APIService.service.getData(
