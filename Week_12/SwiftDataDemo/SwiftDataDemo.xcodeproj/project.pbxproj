@@ -7,32 +7,19 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		7EE505C02E45C5DC0064AB54 /* Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E5108FC2E9914BB0040B8AD /* SwiftDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		7EF48FDC2E8FDFFB003D500C /* Exceptions for "Gallery" folder in "Gallery" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 7EE505BF2E45C5DC0064AB54 /* Gallery */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		7EE505C22E45C5DC0064AB54 /* Gallery */ = {
+		7E5108FE2E9914BB0040B8AD /* SwiftDataDemo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				7EF48FDC2E8FDFFB003D500C /* Exceptions for "Gallery" folder in "Gallery" target */,
-			);
-			path = Gallery;
+			path = SwiftDataDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7EE505BD2E45C5DC0064AB54 /* Frameworks */ = {
+		7E5108F92E9914BB0040B8AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,18 +29,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7EE505B72E45C5DC0064AB54 = {
+		7E5108F32E9914BB0040B8AD = {
 			isa = PBXGroup;
 			children = (
-				7EE505C22E45C5DC0064AB54 /* Gallery */,
-				7EE505C12E45C5DC0064AB54 /* Products */,
+				7E5108FE2E9914BB0040B8AD /* SwiftDataDemo */,
+				7E5108FD2E9914BB0040B8AD /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7EE505C12E45C5DC0064AB54 /* Products */ = {
+		7E5108FD2E9914BB0040B8AD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7EE505C02E45C5DC0064AB54 /* Gallery.app */,
+				7E5108FC2E9914BB0040B8AD /* SwiftDataDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,64 +48,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7EE505BF2E45C5DC0064AB54 /* Gallery */ = {
+		7E5108FB2E9914BB0040B8AD /* SwiftDataDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7EE505D32E45C5E00064AB54 /* Build configuration list for PBXNativeTarget "Gallery" */;
+			buildConfigurationList = 7E5109072E9914BF0040B8AD /* Build configuration list for PBXNativeTarget "SwiftDataDemo" */;
 			buildPhases = (
-				7EE505BC2E45C5DC0064AB54 /* Sources */,
-				7EE505BD2E45C5DC0064AB54 /* Frameworks */,
-				7EE505BE2E45C5DC0064AB54 /* Resources */,
+				7E5108F82E9914BB0040B8AD /* Sources */,
+				7E5108F92E9914BB0040B8AD /* Frameworks */,
+				7E5108FA2E9914BB0040B8AD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				7EE505C22E45C5DC0064AB54 /* Gallery */,
+				7E5108FE2E9914BB0040B8AD /* SwiftDataDemo */,
 			);
-			name = Gallery;
+			name = SwiftDataDemo;
 			packageProductDependencies = (
 			);
-			productName = Gallery;
-			productReference = 7EE505C02E45C5DC0064AB54 /* Gallery.app */;
+			productName = SwiftDataDemo;
+			productReference = 7E5108FC2E9914BB0040B8AD /* SwiftDataDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7EE505B82E45C5DC0064AB54 /* Project object */ = {
+		7E5108F42E9914BB0040B8AD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
-					7EE505BF2E45C5DC0064AB54 = {
+					7E5108FB2E9914BB0040B8AD = {
 						CreatedOnToolsVersion = 16.4;
 					};
 				};
 			};
-			buildConfigurationList = 7EE505BB2E45C5DC0064AB54 /* Build configuration list for PBXProject "Gallery" */;
+			buildConfigurationList = 7E5108F72E9914BB0040B8AD /* Build configuration list for PBXProject "SwiftDataDemo" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 7EE505B72E45C5DC0064AB54;
+			mainGroup = 7E5108F32E9914BB0040B8AD;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 7EE505C12E45C5DC0064AB54 /* Products */;
+			productRefGroup = 7E5108FD2E9914BB0040B8AD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7EE505BF2E45C5DC0064AB54 /* Gallery */,
+				7E5108FB2E9914BB0040B8AD /* SwiftDataDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7EE505BE2E45C5DC0064AB54 /* Resources */ = {
+		7E5108FA2E9914BB0040B8AD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -128,7 +115,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7EE505BC2E45C5DC0064AB54 /* Sources */ = {
+		7E5108F82E9914BB0040B8AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,71 +125,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		7EE505D42E45C5E00064AB54 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7GNKAKRCK3;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Gallery/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Coditas.Gallery;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Debug;
-		};
-		7EE505D52E45C5E00064AB54 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7GNKAKRCK3;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Gallery/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Coditas.Gallery;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		7EE505D62E45C5E00064AB54 /* Debug */ = {
+		7E5109052E9914BF0040B8AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -237,6 +160,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7GNKAKRCK3;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -254,7 +178,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -265,7 +189,7 @@
 			};
 			name = Debug;
 		};
-		7EE505D72E45C5E00064AB54 /* Release */ = {
+		7E5109062E9914BF0040B8AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -300,6 +224,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7GNKAKRCK3;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -311,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -321,28 +246,84 @@
 			};
 			name = Release;
 		};
+		7E5109082E9914BF0040B8AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7GNKAKRCK3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = coditas.SwiftDataDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E5109092E9914BF0040B8AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7GNKAKRCK3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = coditas.SwiftDataDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7EE505BB2E45C5DC0064AB54 /* Build configuration list for PBXProject "Gallery" */ = {
+		7E5108F72E9914BB0040B8AD /* Build configuration list for PBXProject "SwiftDataDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7EE505D62E45C5E00064AB54 /* Debug */,
-				7EE505D72E45C5E00064AB54 /* Release */,
+				7E5109052E9914BF0040B8AD /* Debug */,
+				7E5109062E9914BF0040B8AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7EE505D32E45C5E00064AB54 /* Build configuration list for PBXNativeTarget "Gallery" */ = {
+		7E5109072E9914BF0040B8AD /* Build configuration list for PBXNativeTarget "SwiftDataDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7EE505D42E45C5E00064AB54 /* Debug */,
-				7EE505D52E45C5E00064AB54 /* Release */,
+				7E5109082E9914BF0040B8AD /* Debug */,
+				7E5109092E9914BF0040B8AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7EE505B82E45C5DC0064AB54 /* Project object */;
+	rootObject = 7E5108F42E9914BB0040B8AD /* Project object */;
 }
