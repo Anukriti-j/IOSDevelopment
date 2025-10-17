@@ -19,7 +19,11 @@ struct SignInView: View {
                     Task {
                         do {
                             try  await viewModel.signUp()
-                            showSignInView = false
+                            if try AuthenticationManager.shared.getAuthenticatedUser() != nil {
+                                showSignInView = false
+                            } else {
+                                print("User not authenticated after sign up")
+                            }
                             return
                         } catch {
                             print("\(error)")
@@ -27,7 +31,11 @@ struct SignInView: View {
                         
                         do {
                             try  await viewModel.signIn()
-                            showSignInView = false
+                            if try AuthenticationManager.shared.getAuthenticatedUser() != nil {
+                                showSignInView = false
+                            } else {
+                                print("User not authenticated after sign in")
+                            }
                             return
                         } catch {
                             print("\(error)")
@@ -44,7 +52,11 @@ struct SignInView: View {
                     Task {
                         do {
                             try await viewModel.signInGoogle()
-                            showSignInView = false
+                            if try AuthenticationManager.shared.getAuthenticatedUser() != nil {
+                                showSignInView = false
+                            } else {
+                                print("User not authenticated after Google sign-in")
+                            }
                         } catch {
                             print(error)
                         }
