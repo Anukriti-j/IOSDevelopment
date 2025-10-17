@@ -47,6 +47,4 @@ final class SignInViewModel {
     }
 }
 
-// add validation logic to email and password fields, number of characters, valid email
-
 

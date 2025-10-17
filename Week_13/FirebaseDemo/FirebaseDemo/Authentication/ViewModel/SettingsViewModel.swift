@@ -23,7 +23,6 @@ final class SettingsViewModel {
         }
     }
     
-    // TODO: Error handling
     func resetPassword() async throws {
         let authUser = try AuthenticationManager.shared.getAuthenticatedUser()
         guard let email = authUser.email else {
