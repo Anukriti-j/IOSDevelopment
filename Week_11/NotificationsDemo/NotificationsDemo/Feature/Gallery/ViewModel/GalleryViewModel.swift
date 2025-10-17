@@ -78,8 +78,9 @@ class GalleryViewModel: ObservableObject {
         var notificationMetaData: [ImageMetadata] = []
         for item in items {
             if let data = try? await item.loadTransferable(type: Data.self),
-               let uiImage = UIImage(data: data) {
-                if let meta = await saveImageToFileAndReturnMeta(uiImage) {
+               let uiImage = UIImage(data: data),
+               let resizedImage = uiImage.resize(to: CGSize(width: 300, height: 300)) {
+                if let meta = await saveImageToFileAndReturnMeta(resizedImage) {
                     notificationMetaData.append(meta)
                 }
             }
@@ -88,7 +89,7 @@ class GalleryViewModel: ObservableObject {
             LocalNotificationManager.manager.scheduleBatchNotification(for: notificationMetaData)
         }
     }
-    
+
     func deletePhoto(_ photo: Photo) {
         DispatchQueue.global(qos: .background).async {
             FileManagerService.shared.deleteMetadata(photo)
