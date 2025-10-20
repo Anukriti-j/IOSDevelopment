@@ -1,5 +1,6 @@
 import UIKit
 
+@MainActor
 final class Utilities {
     static let shared = Utilities()
     private init() {}
