@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>Google Sign In</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.670602751705-cit5trmc9no3okj2o6akjccqkcfd10vj</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>Facebook Sign in</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb761377483597221</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>Github</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>app-1-670602751705-ios-e3ff273e741d0ab57b18c8</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>761377483597221</string>
+	<key>FacebookClientToken</key>
+	<string>3171daa5e12654076b458dafd12dc1d0</string>
+	<key>FacebookDisplayName</key>
+	<string>FirebaseDemo</string>
+	<key>GIDClientID</key>
+	<string>670602751705-cit5trmc9no3okj2o6akjccqkcfd10vj.apps.googleusercontent.com</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-share-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
+</dict>
+</plist>
